@@ -158,7 +158,7 @@ deployment_groups:
         family: slurm-gcp-6-11-hpc-rocky-linux-8
         project: schedmd-slurm-public
       add_deployment_name_before_prefix: true
-      name_prefix: chrome-remote-desktop
+      name_prefix: g4-gpu-vm
       machine_type: g4-standard-48
       disk_type: hyperdisk-balanced
       disable_public_ips: true
