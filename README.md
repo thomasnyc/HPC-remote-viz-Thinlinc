@@ -1,6 +1,6 @@
-# HPC Remote Visualization VM w Thinlinc
+# GCP HPC Remote Visualization VM w Thinlinc
 
-This document talks about setting up an HPC Remote Visualization VM with Thinlinc.
+This document talks about setting up an HPC Remote Visualization VM with Thinlinc using GCP Cluster Toolkit.
 
 ## What is Thinlinc: 
 
