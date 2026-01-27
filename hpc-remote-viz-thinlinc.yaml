@@ -39,6 +39,16 @@ deployment_groups:
     #  network_name: custom-network1
     #  subnetwork_name: us-central1-subnet1-ip4
     source: modules/network/vpc
+      settings:
+        firewall_rules:
+        - name: ssh-my-machine
+          direction: INGRESS
+          ranges: [<your-ip-address>/32]
+          allow:
+          - protocol: tcp
+              ports: [22]
+  # By default a firewall rule is created to allow inbound SSH access from Identity-Aware Proxy. 
+  #A user must have the IAP-Secured Tunnel User (roles/iap.tunnelResourceAccessor) IAM role to be able to SSH over IAP
 
   - id: install-nvidia-virtualgl
     source: modules/scripts/startup-script
